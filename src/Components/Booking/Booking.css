@@ -1,0 +1,39 @@
+.section-header {
+  margin-top: 80px;
+}
+.reservation-form {
+  min-height: 500px;
+  background: rgba(55, 55, 63, 0.04);
+}
+.reservation-form h2 {
+  color: var(--color-primary);
+}
+.book-a-table .reservation-img {
+  background: url("../../Images/reservation.jpg");
+  background-position: center center;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.book-a-table .reservation-form-bg {
+  margin: auto;
+}
+.reservation-form-bg input {
+  font-size: 16px;
+}
+.reservation-form-bg p {
+  color: red;
+}
+.reservation-form button {
+  background: var(--color-primary);
+  border: 0;
+  padding: 14px 60px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+.reservation-form button:hover {
+  background: #ec2727;
+}

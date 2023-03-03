@@ -1,0 +1,96 @@
+.menu {
+  margin-top: 60px;
+}
+.menu h2 {
+  font-size: 13px;
+  font-weight: 500;
+}
+.menu p.about-heading {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: var(--font-heading);
+  margin-bottom: 20px;
+  color: var(--color-secondary);
+}
+
+.menu p span {
+  color: var(--color-primary);
+}
+@media (max-width: 575px) {
+  .menu p.about-heading {
+    font-size: 35px;
+  }
+}
+/* -------------------categories------------------ */
+.nav-tabs {
+  border: 0;
+  margin-bottom: 35px;
+}
+.dishes {
+  margin: 0;
+  border: none;
+  padding: 10px 10px;
+  transition: 0.3s;
+  color: var(--color-secondary);
+  border-radius: 0;
+  cursor: pointer;
+  height: 100%;
+  border: 0;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin: 0;
+  color: var(--color-secondary);
+}
+.dishes:hover {
+  border: none;
+}
+.dishes:active {
+  color: red;
+}
+.dishes p {
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 10px;
+}
+.menu .dishes p:hover {
+  color: var(--color-primary);
+}
+button:hover {
+  color: var(--color-primary);
+}
+@media (max-width: 575px) {
+  .dishes {
+    margin: 0 10px;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
+
+/* -------------------------items--------------- */
+
+.menu-item {
+  text-align-last: center;
+}
+
+.menu-item .menu-img {
+  padding: 0 60px;
+  margin-top: 30px;
+}
+.menu-item h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-transform: capitalize;
+  font-weight: 30px;
+  margin-bottom: 5px;
+}
+.menu-item .ingredients {
+  color: #8d8d9b;
+  margin-bottom: 5px;
+}
+.menu-item .price {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-primary);
+}

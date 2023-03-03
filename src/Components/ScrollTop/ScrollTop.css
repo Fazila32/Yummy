@@ -1,0 +1,20 @@
+.scroll-top {
+  position: fixed;
+
+  right: 15px;
+  bottom: 15px;
+
+  background: var(--color-primary);
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.4s;
+  font-size: 24px;
+  color: #fff;
+}
+
+.scroll-top:hover {
+  background: #ec2727;
+  color: #fff;
+}

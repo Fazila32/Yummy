@@ -1,0 +1,154 @@
+.header {
+  background: #fff;
+  height: 90px;
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+.navbar {
+  height: 90px;
+}
+.logo h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  font-family: var(--font-secondary);
+}
+
+.logo h1 span {
+  color: var(--color-primary);
+}
+
+.btn-book-a-table {
+  font-size: 16px;
+  color: #fff;
+  background: var(--color-primary);
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-book-a-table:hover {
+  color: #fff;
+  background: rgba(206, 18, 18, 0.8);
+}
+/*  Desktop Navigation--------------------------------------------------------------*/
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar > ul > li {
+  white-space: nowrap;
+  padding: 10px 0 10px 28px;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  font-weight: 600;
+  color: #7f7f90;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: var(--color-primary);
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar li:hover > a {
+  color: #000;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 28px;
+  margin: 0;
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.navbar .dropdown ul a:hover {
+  color: var(--color-primary);
+}
+
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.mobile-nav-show,
+.mobile-nav-hide {
+  display: none;
+}
+@media (max-width: 1080px) {
+  .navbar {
+    display: none;
+  }
+  .top-nav {
+    margin-top: 20px;
+  }
+}
